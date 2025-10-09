@@ -1,0 +1,498 @@
+/* Tipografia personalizada */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Playfair+Display:400,700&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Aumentado para melhor leitura */
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*section divider*/
+.section-divider-decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+  color: #798042;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.section-divider-decor hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background-color: #798042;
+  margin: 0 20px;
+  opacity: 0.6;
+}
+
+.section-banner-full {
+  width: 100vw;
+  background: linear-gradient(to right, #f8bbd0, #fce4ec, #f8bbd0);
+  padding: 60px 20px 0 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow-x: hidden;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #798042;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Zona reservada para tira decorativa */
+
+
+/* Cabeçalhos principais */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Subtítulos e frases poéticas */
+.lead {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: #555;
+}
+
+/* Imagens clicáveis com efeito suave */
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.img-responsive {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Secções */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.img-circle {
+  border: 7px solid #f8bbd0;
+}
+
+/* Botões personalizados */
+.btn-primary {
+  background-color: #f48fb1;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ec407a;
+  transform: scale(1.05);
+}
+
+
+/* Rodapé */
+footer {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  .text-left {
+    text-align: center;
+  }
+
+  .col-sm-4, .col-sm-6 {
+    margin-bottom: 30px;
+  }
+
+  .img-circle {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Cores de fundo por secção */
+.bg-rosa {
+  background: linear-gradient(to right, #b6c39b, #CFDDB4, #b6c39b);
+  padding: 60px 20px;
+}
+
+.bg-branco {
+  background-color: #fce4ec;
+  padding: 60px 20px;
+}
+
+/* Grelha de botões com altura uniforme */
+.row.text-center .col-sm-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* ajustar conforme o teu gosto */
+}
+
+/* Contactos */
+.contact-section {
+  background: linear-gradient(to right,#fce4ec, #f8bbd0);
+  padding: 60px 20px;
+}
+
+.contact-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #f8bbd0;
+  margin-bottom: 20px;
+}
+
+.contact-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #798042;
+}
+
+.contact-links {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+.contact-links a {
+  color: #f06292;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #ec407a;
+}
+
+.contact-icon i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: #f06292;
+  vertical-align: middle;
+}
+
+/*independentprojects*/
+.independent-heading .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #798042; /* tom rosa mais intenso */
+  display: block;
+  margin: 20px 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra suave */
+}
+
+.independent-heading .decor-top{
+  color: #d81b60;
+}
+
+.independent-heading .decor-bottom{
+  color: #d81b60;
+  margin-bottom:100px;
+}
+
+
+/*banner galeria*/
+.section-banner-full {
+  width: 100vw;
+  background: linear-gradient(to right, #f8bbd0 #fce4ec, #f8bbd0);
+  padding: 60px 0 0 0;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+.banner-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Zona reservada para tira decorativa */
+.banner-strip-placeholder {
+  height: 228px;
+}
+
+/*galeria*/
+
+
+.gallery-item h3{
+  color: #798042; 
+}
+
+.gallery-item img[data-toggle="modal"] {
+  cursor: zoom-in;
+}
+
+
+
+.gallery-item {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.gallery-item img{
+  padding: 7px;
+  border: 4px solid #CFDDB4;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #CFDDB4, #798042);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  min-height:500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-item img:hover{
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*modal*/
+
+.img-modal {
+  max-width:500px;
+  transform: scale(2); /* ou usa zoom real com JS */
+  margin:auto;
+  display: block;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .img-modal {
+    max-width: 80%;
+    height: auto;
+    transform: scale(1.1); /* ou remove o scale e usa pinch-to-zoom */
+  }
+}
+
+.modal-content{
+  background: none !important;
+  box-shadow: none!important;
+  border:none!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  overflow: visible;
+  z-index: 1050;
+}
+
+.modal-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-dialog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/*video gallery*/
+
+.gallery-item video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.gallery-item iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 4px solid #CFDDB4;
+  background: linear-gradient(to bottom right, #CFDDB4, #798042);
+  padding: 7px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*ux&ui*/
+.coming-soon-box {
+  background-color: #ffffff;
+  border: 2px dashed #ccc;
+  padding: 60px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.coming-soon-box:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  cursor: default;
+}
+
+.coming-soon-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.coming-soon-box p {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+}
+
+/*drop-cap*/
+.drop-cap{
+float:left;
+font-size: 4em;
+line-height:0.8;
+padding-right:8px;
+padding-top:4px;
+font-weight:bold;
+font-family:'CinzelDecorative-Bold';
+}
+
+/*font*/
+@font-face{
+font-family:'CinzelDecorative-Bold'; 
+src:url('font/CinzelDecorative-Bold.otf'); 
+font-weight:normal;
+font-style:normal;
+
+}
+
+/*bgGreen*/
+.bgGreen{
+  background: linear-gradient(to right, #b6c39b, #CFDDB4, #b6c39b);
+
+}
+
+.bgGreen .gallery-item{
+ 
+  padding:30px;
+}
