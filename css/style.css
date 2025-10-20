@@ -135,6 +135,26 @@ section h2 {
 }
 
 /* Botões personalizados */
+.btn-gallery {
+  width: 200px;
+  transition: transform 0.2s ease;
+  background:none;
+  box-shadow: none;
+}
+
+.btn-gallery:hover {
+  transform: scale(1.05);
+  background:none;
+  box-shadow: none;
+}
+
+.btn-gallery:active,
+.btn-gallery:focus {
+  background:none;
+  box-shadow: none;
+  outline: none;
+}
+
 .btn-primary {
   background-color: #f48fb1;
   border: none;
